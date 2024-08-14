@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/navbar'
 import Features from './components/features'
+import Work from './components/work.jsx'
 import { Routes } from 'react-router-dom'
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
       
       <Features/>
+      <Work/>
     
     
       
