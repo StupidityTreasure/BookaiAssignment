@@ -4,10 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
 
 body{
     font-family: "Poppins",sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+    background: linear-gradient(135deg,#1e0533,#110a1f);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
     
+    margin: 0;
+    padding: 0;
 }
 
 #app {
@@ -19,12 +32,14 @@ body{
     height: 100%;
   }
   
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
   
+  .btn{
+    background: linear-gradient(45deg,#726bff,#57b6fe);
+    color:#ffffff
+  }
+  .btn:hover{
+    transform: translateY(-3px);
+  }
+  .clr{
+    background: linear-gradient(135deg,#1e0533,#110a1f);
+  }
