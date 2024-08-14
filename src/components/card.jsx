@@ -5,7 +5,7 @@ function Card() {
         <>
         
 
-<div className="card bg-purple-500 bg-opacity-5 w-96 shadow-xl">
+<div className="card hover:-translate-y-5 bg-purple-500 bg-opacity-5 w-96 shadow-xl">
   <figure className="px-10 pt-10">
     <img 
       src={bar2}
@@ -19,7 +19,7 @@ function Card() {
   </div>
 </div>
 
-<div className="card bg-purple-500 bg-opacity-5 w-96 shadow-xl">
+<div className=" hover:-translate-y-5 card bg-purple-500 bg-opacity-5 w-96 shadow-xl">
   <figure className="px-10 pt-10">
     <img 
       src={bar2}
@@ -33,7 +33,7 @@ function Card() {
   </div>
 </div>
 
-<div className="card bg-purple-500 bg-opacity-5 w-96 shadow-xl">
+<div className=" hover:-translate-y-5 card bg-purple-500 bg-opacity-5 w-96 shadow-xl">
   <figure className="px-10 pt-10">
     <img 
       src={bar2}

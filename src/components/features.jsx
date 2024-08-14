@@ -4,7 +4,8 @@ import Robo1 from '../../public/images/Robo1.jpg'
 function Front() {
     return (
         <>
-        <div className=' clr w-full mt-28 grid justify-center font-[poppins] items-center p-10  space-y-10'>
+        <div className='clr'>
+        <div className='  w-full pt-28 grid justify-center font-[poppins] items-center p-10  space-y-10'>
             <div>
                 <h1 className='text-4xl text-white font-bold text-center'>Explore the Possibilities of <span className='text-purple-700'>AI Book Writing </span> with BookAI</h1>
             </div>
@@ -19,7 +20,7 @@ function Front() {
 
             <div className='md:px-44 pt-20  '>
             <div className='bg-purple-500  bg-opacity-5 rounded-xl '>
-            <img className='rounded-2xl p-9 ease-out duration-500 hover:translate-x-3 hover:translate-y-3' src={Bar1} alt="" />
+            <img className='rounded-2xl p-9 ease-out duration-500 hover:-translate-y-5 ' src={Bar1} alt="" />
             
             
             </div>
@@ -28,27 +29,28 @@ function Front() {
         </div>
         </div>
 
-        <div className="md:flex m-8 px-28 md:flex-row grid grid-cols-2 gap-5 justify-center ">
-    <div className="flex flex-col items-center text-center">
+        <div className="md:flex  p-28 md:flex-row grid grid-cols-2 gap-5 justify-center ">
+    <div className="flex flex-col items-center text-center transition duration-500 ease-out hover:-translate-y-5 cursor-pointer">
+        <img className="rounded-full  h-20 w-20 m-8" src={Robo1} alt="AI-Powered Writing" />
+        <h2 className="font-semibold text-lg">AI-Powered Writing</h2>
+        <p>Generate high-quality content with advanced AI technology</p>
+    </div>
+    <div className="flex hover:-translate-y-5 flex-col items-center text-center">
         <img className="rounded-full h-20 w-20 m-8" src={Robo1} alt="AI-Powered Writing" />
         <h2 className="font-semibold text-lg">AI-Powered Writing</h2>
         <p>Generate high-quality content with advanced AI technology</p>
     </div>
-    <div className="flex flex-col items-center text-center">
+    <div className="flex hover:-translate-y-5 flex-col items-center text-center">
         <img className="rounded-full h-20 w-20 m-8" src={Robo1} alt="AI-Powered Writing" />
         <h2 className="font-semibold text-lg">AI-Powered Writing</h2>
         <p>Generate high-quality content with advanced AI technology</p>
     </div>
-    <div className="flex flex-col items-center text-center">
+    <div className="flex hover:-translate-y-5 flex-col items-center text-center">
         <img className="rounded-full h-20 w-20 m-8" src={Robo1} alt="AI-Powered Writing" />
         <h2 className="font-semibold text-lg">AI-Powered Writing</h2>
         <p>Generate high-quality content with advanced AI technology</p>
     </div>
-    <div className="flex flex-col items-center text-center">
-        <img className="rounded-full h-20 w-20 m-8" src={Robo1} alt="AI-Powered Writing" />
-        <h2 className="font-semibold text-lg">AI-Powered Writing</h2>
-        <p>Generate high-quality content with advanced AI technology</p>
-    </div>
+</div>
 </div>
 
         
