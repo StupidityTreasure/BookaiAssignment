@@ -6,32 +6,11 @@ function Navbar() {
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
     const element = document.documentElement;
 
-    useEffect(() => {
-        if (theme === 'dark') {
-            element.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-            document.body.classList.add('dark');
-        } else {
-            element.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-            document.body.classList.remove('dark');
-        }
-    }, [theme]);
-
-    const toggleTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
-    };
+    
 
     
     
-        let Links=[
-            {name:"Features",link:"/"},
-            {name:"How It Works",link:"/"},
-            {name:"Roadmap",link:"/"},
-            {name:"API",link:"/"},
-            {name:"Price",link:"/"},
-            {name:"Models",link:"/"},
-        ]
+        
         
         const [open,setOpen]=useState(false)
 
@@ -48,16 +27,17 @@ function Navbar() {
                 <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
                 <ion-icon name={open ? 'close-outline':'menu-outline'}></ion-icon>
                 </div>
-                <ul className={`text-white md:flex md:justify-center md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20':'top-[-490px]'}`}>
-                    {
-                        Links.map((Link)=>(
-                            <li key={Link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-                                <a href="{Links.link}" className='text-white hover:text-gray-400 duration-500'>{Link.name}</a>
-                            </li>
-                        ))
-                    }
+                <ul className={`text-white md:flex md:justify-center md:items-center md:pb-0 space-x-4 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20':'top-[-490px]'}`}>
+                    <li><a className=' text-2xl ' href="">Features</a></li>
+                    <li><a className=' text-2xl ' href="">How it Works</a>
+                
+                    </li>
+                    <li><a className=' text-2xl ' href="">Roadmap</a></li>
+                    <li><a className=' text-2xl ' href="">API</a></li>
+                    <li><a className=' text-2xl '  href="">Prices</a></li>
+                    <li><a className=' text-2xl ' href="">Models</a></li>
                     <button className='btn text-white px-5 py-2 rounded-sm m-5'>
-                        Login
+                        Login/Signup
                     </button>
                 </ul>
             </div>

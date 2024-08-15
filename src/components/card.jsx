@@ -13,7 +13,7 @@ function Card() {
       className="rounded-xl " />
   </figure>
   <div className="card-body items-center text-center">
-    <h2 className="card-title">Science Fiction</h2>
+    <h2 className="card-title text-xl font-semibold m-3">Science Fiction</h2>
     <p>As Dr. Elara stepped through the shimmering portal, she knew there was no turning back. The fate of two universes now rested in her hands..."</p>
     <span className='text-purple-800 text-lg'>Read More..</span>
   </div>
@@ -27,7 +27,7 @@ function Card() {
       className="rounded-xl " />
   </figure>
   <div className="card-body items-center text-center">
-    <h2 className="card-title">Science Fiction</h2>
+    <h2 className="card-title text-xl m-3 font-semibold">Science Fiction</h2>
     <p>As Dr. Elara stepped through the shimmering portal, she knew there was no turning back. The fate of two universes now rested in her hands..."</p>
     <span className='text-purple-800 text-lg'>Read More..</span>
   </div>
@@ -41,7 +41,7 @@ function Card() {
       className="rounded-xl " />
   </figure>
   <div className="card-body items-center text-center">
-    <h2 className="card-title">Science Fiction</h2>
+    <h2 className="card-title text-xl font-semibold m-3">Science Fiction</h2>
     <p>As Dr. Elara stepped through the shimmering portal, she knew there was no turning back. The fate of two universes now rested in her hands..."</p>
     <span className='text-purple-800 text-lg'>Read More..</span>
   </div>
